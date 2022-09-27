@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FBFBFB;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1,h2,h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.is-hidden{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;  
+}
+.section{
+    width: 100%;
+    padding: 50px 30px;
+}

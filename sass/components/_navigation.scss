@@ -1,0 +1,20 @@
+.navigation__list{
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__link{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.2;
+
+    &:hover,
+    &:focus{
+        color: #283FFC;
+    }
+}
