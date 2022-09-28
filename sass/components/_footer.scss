@@ -1,0 +1,19 @@
+.footer{
+    background-color: #1028C9;
+    color: white;
+}
+
+.footer__section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.footer__text{
+    text-align: center;
+}
