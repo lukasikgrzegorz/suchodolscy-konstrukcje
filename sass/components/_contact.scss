@@ -1,5 +1,7 @@
+@use './../utils' as *;
+
 .contact{
-    background-color: #EFF1FF;
+    background-color: getColor("light-background-color");
 }
 
 .contact__title {

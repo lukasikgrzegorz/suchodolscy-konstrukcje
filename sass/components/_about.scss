@@ -1,3 +1,9 @@
+@use './../utils' as *;
+
+.about{
+    scroll-margin-top: -80px;
+}
+
 .about__list{
     width: 100%;
     display: flex;
@@ -23,29 +29,29 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    color: white;
+    color: getColor("light-color");
   
 
     &:nth-child(1){
-        background-color: #1028C9;
+        background-color: #80ccff;
     }
     
     &:nth-child(2){
-        background-color: #0E23B0;
+        background-color: #66c2ff;
     }
 
     &:nth-child(3){
-        background-color: #0C1E97;
+        background-color: #4db8ff;
     }
 
     &:nth-child(4){
-        background-color: #0A197E;
+        background-color: #33adff;
     }
 
     &:hover,
     &:focus{
        color: black;
-       background-color: #EFF1FF;
+       background-color: getColor("light-background-color");
        transform: translateY(-60px);
     }
 }
@@ -79,7 +85,7 @@
         display: block;
         width: 50px;
         height: 5px;
-        background-color: #1028C9;
+        background-color: #33adff;
     }
 }
 

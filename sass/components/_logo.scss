@@ -1,3 +1,5 @@
+@use './../utils' as *;
+
 .logo__icon{
     width: 60px;
     height: 60px;
@@ -5,6 +7,6 @@
 
     &:hover,
     &:focus{
-        fill: #283FFC;
+        fill: #33adff;
     }
 }

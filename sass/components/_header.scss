@@ -1,11 +1,19 @@
+@use './../utils' as *;
+
 .header{
     width: 100%;
     padding: 15px 30px;
-
     position: absolute;
+    background-color: transparent;
     top: 0;
     left: 0;
     z-index: 10;
+    transition: background-color 500ms linear;
+}
+
+.header--sticky{
+    position: fixed;
+    background-color: getColor("dark-background-color");
 }
 
 .header__container{

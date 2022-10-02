@@ -1,5 +1,8 @@
+@use './../utils' as *;
+
 .services{
     background-color: #EFF1FF;
+    scroll-margin-top: 80px;
 }
 
 .services__title {

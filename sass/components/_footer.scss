@@ -1,6 +1,8 @@
+@use './../utils' as *;
+
 .footer{
-    background-color: #1028C9;
-    color: white;
+    background-color: getColor("dark-background-color");
+    color: getColor("light-color");
 }
 
 .footer__section{

@@ -1,6 +1,8 @@
+@use './../utils' as *;
+
 .specialist{
-    background-color: #1028C9;
-    color: white;
+    background-color: getColor("dark-background-color");
+    color: getColor("light-color");
 }
 
 .specialist__section{
@@ -28,16 +30,16 @@
     width: 300px;
     height: 70px;
     background-color: transparent;
-    border: 4px solid white;
+    border: 4px solid getColor("light-color");
     font-size: 24px;
-    color: white;
+    color: getColor("light-color");
     font-weight: 800;
     text-transform: uppercase;
 
 
     &:hover,
     &:focus{
-        background-color: white;
-        color:#1028C9;
+        background-color: getColor("light-color");
+        color: getColor("dark-background-color");;
     }
 }
