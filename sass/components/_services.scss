@@ -1,7 +1,7 @@
 @use './../utils' as *;
 
 .services{
-    background-color: #EFF1FF;
+    background-color: getColor("light-background-color");
     scroll-margin-top: 80px;
 }
 
@@ -21,6 +21,6 @@
         display: block;
         width: 50px;
         height: 5px;
-        background-color: #1028C9;
+        background-color: getColor("accent-color");
     }
 }
