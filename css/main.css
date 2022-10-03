@@ -12,7 +12,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 img {
@@ -66,6 +65,7 @@ h1, h2, h3 {
 
 .header {
   width: 100%;
+  height: auto;
   padding: 15px 30px;
   position: absolute;
   background-color: transparent;
@@ -76,34 +76,80 @@ h1, h2, h3 {
   transition: background-color 500ms linear;
 }
 
-.header--sticky {
-  position: fixed;
-  background-color: #006bb3;
+@media screen and (min-width: 768px) {
+  .header--sticky {
+    position: fixed;
+    background-color: #006bb3;
+  }
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.header__menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.header__menu-btn:hover {
+  color: #33adff;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-btn {
+    display: none;
+  }
+}
+.header__icon {
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo__icon {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   fill: white;
 }
 .logo__icon:hover, .logo__icon:focus {
   fill: #33adff;
 }
 
+@media screen and (min-width: 768px) {
+  .logo__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
 .navigation__list {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -111,8 +157,16 @@ h1, h2, h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .navigation__link {
   color: white;
   font-size: 16px;
@@ -128,6 +182,7 @@ h1, h2, h3 {
   height: 520px;
   background-color: #283FFC;
   position: relative;
+  overflow: hidden;
 }
 
 .slider__thumb {
@@ -176,16 +231,21 @@ h1, h2, h3 {
 
 .slider__title {
   color: white;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 800;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   border-bottom: 1px solid white;
 }
 
+@media screen and (min-width: 768px) {
+  .slider__title {
+    font-size: 64px;
+  }
+}
 .slider__dynamic-span {
   color: white;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -197,14 +257,19 @@ h1, h2, h3 {
 
 .about__list {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .about__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -213,9 +278,14 @@ h1, h2, h3 {
 }
 
 .about__section {
-  padding: 0px 30px 50px 30px;
+  padding: 50px 30px 50px 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__section {
+    padding: 0px 30px 50px 30px;
+  }
+}
 .about__item {
   -ms-flex-preferred-size: calc((100% - 45px) / 4);
       flex-basis: calc((100% - 45px) / 4);
@@ -376,6 +446,7 @@ h1, h2, h3 {
 .specialist {
   background-color: #006bb3;
   color: #ffffff;
+  display: none;
 }
 
 .specialist__section {

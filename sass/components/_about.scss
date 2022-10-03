@@ -6,9 +6,15 @@
 
 .about__list{
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     gap: 15px;
+}
+
+@media screen and (min-width: 768px){
+    .about__list {
+        display: flex;
+    }
 }
 
 .about__container {
@@ -16,7 +22,13 @@
 }
 
 .about__section{
-    padding: 0px 30px 50px 30px;
+    padding: 50px 30px 50px 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .about__section {
+        padding: 0px 30px 50px 30px;
+    }
 }
 
 .about__item{

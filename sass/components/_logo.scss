@@ -1,12 +1,24 @@
 @use './../utils' as *;
 
+.logo{
+    display:flex;
+    justify-content: center;
+}
+
 .logo__icon{
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     fill: white;
 
     &:hover,
     &:focus{
-        fill: #33adff;
+        fill: getColor("accent-color")
+    }
+}
+
+@media screen and (min-width:768px) {
+    .logo__icon {
+        width: 60px;
+        height: 60px;
     }
 }
