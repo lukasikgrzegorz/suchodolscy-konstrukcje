@@ -1,4 +1,7 @@
 @use './../utils' as *;
+.portfolio{
+    scroll-margin: 0px
+}
 
 .portfolio__title {
     font-size: 36px;
@@ -16,6 +19,6 @@
         display: block;
         width: 50px;
         height: 5px;
-        background-color: #1028C9;
+        background-color: getColor("accent-color");
     }
 }

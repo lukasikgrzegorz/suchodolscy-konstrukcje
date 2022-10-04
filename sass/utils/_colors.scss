@@ -4,6 +4,11 @@ $colors: (
     "light-color": #ffffff,
     "dark-background-color":#006bb3,
     "light-background-color":#e6f5ff,
+    "light-transparent-color": rgba(255,255,255,0.6),
+    "dark-transparent-color": rgba(25, 28, 38, 0.7),
+    "first-child-color":#80ccff,
+    "second-child-color":#66c2ff,
+    "third-child-color":#4db8ff,
 );
 
 @function getColor($key) {
