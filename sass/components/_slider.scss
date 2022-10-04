@@ -35,7 +35,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px 50px 0px;
+    padding: 150px 0px 50px 0px;
+}
+
+@media screen and(min-width: 768px) {
+    .slider__text-wrapper{
+        padding: 50px 0px 50px 0px;
+    }
 }
 
 .slider__title{
@@ -56,7 +62,13 @@
 .slider__dynamic-span{
     color: white;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .slider__dynamic-span {
+        font-size: 32px;
+    }
 }

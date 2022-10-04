@@ -107,7 +107,7 @@ h1, h2, h3 {
   background-color: transparent;
   border: none;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .header__menu-btn:hover {
   color: #33adff;
@@ -226,9 +226,14 @@ h1, h2, h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px 0px 50px 0px;
+  padding: 150px 0px 50px 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .slider__text-wrapper {
+    padding: 50px 0px 50px 0px;
+  }
+}
 .slider__title {
   color: white;
   font-size: 48px;
@@ -246,11 +251,16 @@ h1, h2, h3 {
 .slider__dynamic-span {
   color: white;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .slider__dynamic-span {
+    font-size: 32px;
+  }
+}
 .about {
   scroll-margin-top: -80px;
 }
@@ -423,12 +433,21 @@ h1, h2, h3 {
   scroll-margin-top: 80px;
 }
 
+.services__outline-wrapper {
+  outline: 4px solid #33adff;
+  outline-offset: -40px;
+  padding: 0 15px 60px 15px;
+}
+
 .services__title {
   font-size: 36px;
   line-height: 2;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   position: relative;
+  background-color: #e6f5ff;
+  max-width: 300px;
+  margin: auto;
 }
 .services__title::after {
   content: "";
@@ -441,6 +460,59 @@ h1, h2, h3 {
   width: 50px;
   height: 5px;
   background-color: #33adff;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.services__item {
+  padding: 15px;
+  height: 80px;
+  width: 80%;
+  max-width: 500px;
+  background-color: #33adff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: background-color 500ms linear, -webkit-transform 500ms linear;
+  transition: background-color 500ms linear, -webkit-transform 500ms linear;
+  transition: transform 500ms linear, background-color 500ms linear;
+  transition: transform 500ms linear, background-color 500ms linear, -webkit-transform 500ms linear;
+}
+.services__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #ffffff;
+  color: #33adff;
+}
+
+.services__icon {
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
 }
 
 .specialist {

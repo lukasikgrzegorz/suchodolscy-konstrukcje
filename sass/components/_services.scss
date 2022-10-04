@@ -3,14 +3,24 @@
 .services{
     background-color: getColor("light-background-color");
     scroll-margin-top: 80px;
+}  
+
+
+.services__outline-wrapper{
+    outline: 4px solid getColor("accent-color");
+    outline-offset: -40px;
+    padding: 0 15px 60px 15px;
 }
 
 .services__title {
     font-size: 36px;
     line-height: 2;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     position: relative;
+    background-color: getColor("light-background-color");
+    max-width: 300px;
+    margin: auto;
 
     &::after {
         content: "";
@@ -23,4 +33,42 @@
         height: 5px;
         background-color: getColor("accent-color");
     }
+}
+
+.services__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.services__item{
+    padding: 15px;
+    height: 80px;
+    width: 80%;
+    max-width: 500px;
+    background-color: getColor("accent-color");
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: getColor("light-color");
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: transform 500ms linear,
+                background-color 500ms linear;
+                
+    &:hover{
+        transform: scale(1.1);
+        background-color: getColor("light-color");
+        color: getColor("accent-color");
+    }
+}
+
+.services__icon{
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
 }
