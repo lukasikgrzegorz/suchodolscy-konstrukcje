@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
   <title>Suchodolscy Konstrukcje Stalowe</title>
@@ -28,13 +29,27 @@
           <li class="navigation__item"><a href="#contact" class="navigation__link">Kontakt</a></li>
         </ul>
       </nav>
-      <button class="header__menu-btn">
+      <button class="header__menu-btn" menu-open-btn>
         <svg class="header__icon">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
   </header>
+
+  <!--MENU-->
+  <div class="menu" menu-container>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#about" class="menu__link">O nas</a></li>
+      <li class="menu__item"><a href="#services" class="menu__link">Usługi</a></li>
+      <li class="menu__item"><a href="#portfolio" class="menu__link">Realizacje</a></li>
+      <li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
+    </ul>
+    <button class="menu__close-btn" menu-close-btn><svg class="menu__icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg></button>
+  </div>
+
   <main>
     <!--SLIDER-->
     <div class="slider">
@@ -136,6 +151,7 @@
       <div class="container">
         <div class="section">
           <h2 class="portfolio__title">realizacje</h2>
+          <div class="gallery"></div>
         </div>
       </div>
     </div>
@@ -166,7 +182,10 @@
     </div>
   </footer>
   <script src="./js/sticky-header.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/faded-slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+  <script src="js/portfolio-gallery.js" type="module"></script>
 </body>
 
 </html>
