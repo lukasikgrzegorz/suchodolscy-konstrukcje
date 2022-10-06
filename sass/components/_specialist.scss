@@ -1,30 +1,37 @@
 @use './../utils' as *;
 
 .specialist{
-    background-color: getColor("dark-background-color");
+    flex-basis: 50%;
+    background: linear-gradient(to bottom, getColor("dark-transparent-color"), getColor("dark-transparent-color")),
+            url('./../images/services.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: getColor("light-color");
     display: none;
 }
 
 .specialist__section{
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 500px;
 }
 
 .specialist__wrapper{
-    flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .specialist__text{
-    font-size: 48px;
+    width: 100%;
+    text-align: left;
+    font-size: 56px;
     font-weight: 800;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .specialist__button{
@@ -41,6 +48,6 @@
     &:hover,
     &:focus{
         background-color: getColor("light-color");
-        color: getColor("dark-background-color");;
+        color: getColor("main-color");;
     }
 }

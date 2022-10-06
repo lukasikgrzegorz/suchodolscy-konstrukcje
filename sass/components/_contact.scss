@@ -44,14 +44,18 @@
     align-items: center;
     padding: 30px 40px 40px 40px;
     gap: 15px;
-    outline: 10px solid getColor("accent-color") ;
-    outline-offset: -10px;
+    outline: 5px solid getColor("accent-color") ;
+    outline-offset: -5px;
     transition: outline-offset 200ms linear;
     width: 100%;
     max-width: 450px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+
     &:focus,
     &:hover{
-        outline-offset: -20px;
+        outline-offset: -15px;
     }
 }
 
@@ -100,10 +104,11 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     transition: background-color 200ms linear;
-
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 
     &:hover,
     &:focus{
