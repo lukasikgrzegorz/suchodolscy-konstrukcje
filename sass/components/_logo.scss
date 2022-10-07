@@ -22,3 +22,14 @@
         height: 60px;
     }
 }
+
+.logo__icon-bottom {
+    width: 60px;
+    height: 60px;
+    fill: white;
+
+    &:hover,
+    &:focus {
+        fill: getColor("accent-color")
+    }
+}
