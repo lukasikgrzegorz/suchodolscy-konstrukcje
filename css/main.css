@@ -350,10 +350,11 @@ h1, h2, h3 {
     font-size: 32px;
   }
 }
-.about {
-  scroll-margin-top: -80px;
+@media screen and (min-width: 768px) {
+  .about {
+    scroll-margin-top: -90px;
+  }
 }
-
 .about__list {
   width: 100%;
   display: none;
@@ -521,10 +522,11 @@ h1, h2, h3 {
   outline-offset: -8px;
 }
 
-.services {
-  scroll-margin-top: 100px;
+@media screen and (min-width: 768px) {
+  .services {
+    scroll-margin-top: 100px;
+  }
 }
-
 .services__container {
   outline: 5px solid #33adff;
   outline-offset: -15px;
@@ -736,10 +738,11 @@ h1, h2, h3 {
   color: #001f33;
 }
 
-.portfolio {
-  scroll-margin-top: 80px;
+@media screen and (min-width: 768px) {
+  .portfolio {
+    scroll-margin-top: 90px;
+  }
 }
-
 .portfolio__title {
   font-size: 36px;
   line-height: 2;

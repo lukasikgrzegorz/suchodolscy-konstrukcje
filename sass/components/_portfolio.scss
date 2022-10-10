@@ -1,8 +1,9 @@
 @use './../utils' as *;
-.portfolio{
-    scroll-margin-top: 80px;
+@media screen and (min-width: 768px) {
+    .portfolio {
+        scroll-margin-top: 90px;
+    }
 }
-
 .portfolio__title {
     font-size: 36px;
     line-height: 2;
