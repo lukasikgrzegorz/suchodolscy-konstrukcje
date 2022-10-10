@@ -1,0 +1,50 @@
+@use './../utils' as *;
+
+.phone-mail__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .phone-mail__list {
+        flex-direction: row;
+    }
+}
+
+.phone-mail__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: currentColor;
+    width: 100%;
+    overflow: hidden;
+    transition: color 200ms linear;
+
+    &:hover,
+    &focus{
+        color: getColor("accent-color");
+    }
+
+}
+
+.phone-mail__icon {
+    fill: currentColor;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.phone-mail__text {
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+    word-wrap: break-word;
+}

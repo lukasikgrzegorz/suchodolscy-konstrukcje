@@ -71,7 +71,7 @@
     &:hover,
     &:focus{
        color: getColor("main-color");
-       background-color: getColor("light-background-color");
+       background-color: getColor("light-color");
        transform: translateY(-60px);
     }
 }

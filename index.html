@@ -45,6 +45,7 @@
       <li class="menu__item"><a href="#portfolio" class="menu__link">Realizacje</a></li>
       <li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
     </ul>
+
     <button aria-label="close menu" class="menu__close-btn" menu-close-btn><svg class="menu__icon">
         <use href="./images/icons.svg#icon-close"></use>
       </svg></button>
@@ -60,6 +61,26 @@
           loading="lazy">
         <img slide-item-3 class="slider__image fadeout" src="./images/slider-3.jpg" alt="Zdjęcie specjalisty w masce"
           loading="lazy">
+      </div>
+      <div class="slider__contact-wrapper">
+        <ul class="phone-mail__list">
+          <li class="phone-mail__item">
+            <a href="mail:suchodolski.konstrukcje@gmail.com" class="phone-mail__link">
+              <svg class="phone-mail__icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <span class="phone-mail__text">suchodolski.konstrukcje@gmail.com</span>
+            </a>
+          </li>
+          <li class="phone-mail__item">
+            <a href="tel:+512788540" class="phone-mail__link">
+              <svg class="phone-mail__icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <span class="phone-mail__text">512-788-540</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="slider__text-wrapper">
         <h1 class="slider__title">suchodolscy</h1>
@@ -158,21 +179,6 @@
         </div>
       </div>
     </div>
-    <!--SPECIALIST-->
-    <div class="specialist">
-      <div class="container">
-        <div class="specialist__section section">
-          <div class="specialist__wrapper">
-            <span class="specialist__text">szukasz specjalistów?</span>
-          </div>
-          <div class="specialist__wrapper">
-            <button aria-label="send contact form" class="specialist__button" type="button"
-              onclick="window.location.href='#contact'">kontakt</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <!--PORTFOLIO-->
     <div class="portfolio" id="portfolio">
@@ -208,6 +214,7 @@
       </a>
       <span class="footer__text">suchodolscy konstrukcje stalowe &copy; 2022</span>
     </div>
+    
   </footer>
 
   <script src="./js/sticky-header.js"></script>

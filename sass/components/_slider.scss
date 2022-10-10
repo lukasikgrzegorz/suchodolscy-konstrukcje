@@ -72,3 +72,17 @@
         font-size: 32px;
     }
 }
+
+.slider__contact-wrapper{
+    width:100%;
+    color: getColor("light-color");
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+}
+
+@media screen and (min-width:768px) {
+    .slider__contact-wrapper {
+        bottom: 70px;
+    }
+}
