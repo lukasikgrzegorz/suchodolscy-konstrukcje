@@ -29,7 +29,7 @@
           <li class="navigation__item"><a href="#contact" class="navigation__link">Kontakt</a></li>
         </ul>
       </nav>
-      <button class="header__menu-btn" menu-open-btn>
+      <button aria-label="open menu" class="header__menu-btn" menu-open-btn>
         <svg class="header__icon">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
@@ -45,7 +45,7 @@
       <li class="menu__item"><a href="#portfolio" class="menu__link">Realizacje</a></li>
       <li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
     </ul>
-    <button class="menu__close-btn" menu-close-btn><svg class="menu__icon">
+    <button aria-label="close menu" class="menu__close-btn" menu-close-btn><svg class="menu__icon">
         <use href="./images/icons.svg#icon-close"></use>
       </svg></button>
   </div>
@@ -54,9 +54,12 @@
     <!--SLIDER-->
     <div class="slider">
       <div class="slider__thumb">
-        <img slide-item-1 class="slider__image" src="./images/slider-1.jpg" alt="Zdjęcie spawającego profesionalisty">
-        <img slide-item-2 class="slider__image fadein" src="./images/slider-2.jpg" alt="Zdjęcie stalowej konstrukcji">
-        <img slide-item-3 class="slider__image fadeout" src="./images/slider-3.jpg" alt="Zdjęcie specjalisty w masce">
+        <img slide-item-1 class="slider__image" src="./images/slider-1.jpg" alt="Zdjęcie spawającego profesionalisty"
+          loading="lazy">
+        <img slide-item-2 class="slider__image fadein" src="./images/slider-2.jpg" alt="Zdjęcie stalowej konstrukcji"
+          loading="lazy">
+        <img slide-item-3 class="slider__image fadeout" src="./images/slider-3.jpg" alt="Zdjęcie specjalisty w masce"
+          loading="lazy">
       </div>
       <div class="slider__text-wrapper">
         <h1 class="slider__title">suchodolscy</h1>
@@ -96,7 +99,7 @@
           <h2 class="about__title">o naszej firmie</h2>
           <div class="about__wrapper">
             <div class="about__thumb">
-              <img src="./images/about.jpg" alt="" class="about__image">
+              <img src="./images/about.jpg" alt="" class="about__image" loading="lazy">
             </div>
             <p class="about__paragraph">
               <span class="about__span">Postaw na profesjonalizm</span>
@@ -163,7 +166,8 @@
             <span class="specialist__text">szukasz specjalistów?</span>
           </div>
           <div class="specialist__wrapper">
-            <button class="specialist__button" type="button" onclick="window.location.href='#contact'">kontakt</button>
+            <button aria-label="send contact form" class="specialist__button" type="button"
+              onclick="window.location.href='#contact'">kontakt</button>
           </div>
         </div>
       </div>
@@ -205,6 +209,7 @@
       <span class="footer__text">suchodolscy konstrukcje stalowe &copy; 2022</span>
     </div>
   </footer>
+
   <script src="./js/sticky-header.js"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/faded-slider.js"></script>

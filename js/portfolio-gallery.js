@@ -16,11 +16,14 @@ for (let item of galleryItems) {
     newImage.src = item.preview;
     newImage.alt = item.description;
     newImage.setAttribute("data-source", item.original);
+    newImage.setAttribute("loading", "lazy");
 
     newItem.append(newLink);
     newLink.append(newImage); 
     gallery.append(newItem); 
 }
+
+let instance;
 
 gallery.addEventListener("click", (e) => {
     e.preventDefault();
@@ -32,18 +35,14 @@ gallery.addEventListener("click", (e) => {
     newImage.src = e.target.getAttribute("data-source");
     content.appendChild(newImage);
    
-    const instance = basicLightbox.create(content);
+    instance = basicLightbox.create(content);
     instance.show();
-
-    document.addEventListener("keydown", e => {
-        if(e.key==="Escape"){instance.close();}
-    });
 
 })
 
-
-
-		
+    document.addEventListener("keydown", e => {
+        if(e.key==="Escape"){instance.close();}
+    });	
 
 	
 
