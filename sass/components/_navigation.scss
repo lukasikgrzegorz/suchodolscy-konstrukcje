@@ -20,6 +20,7 @@
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 0.2;
+    transition: color $main-animation;
 
     &:hover,
     &:focus{

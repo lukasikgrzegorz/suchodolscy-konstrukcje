@@ -9,7 +9,7 @@
 .services__container{
     outline: 5px solid getColor("accent-color");
     outline-offset: -15px;
-    transition: outline-offset 200ms linear;
+    transition: outline-offset $main-animation;
     width: 100%;
 
     &:focus,
@@ -77,8 +77,8 @@
     font-weight: 600;
     letter-spacing: 0.01em;
     overflow: hidden;
-    transition: color 500ms linear,
-                background-color 500ms linear;
+    transition: color $main-animation,
+                background-color $main-animation;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 
@@ -91,7 +91,7 @@
     &:focus .services__icon{
         width: 50px;
         height: 50px;
-        transition: width 500ms linear,
+        transition: width $main-animation,
     }
 
 
@@ -125,7 +125,7 @@
     fill: currentColor;
     width: 40px;
     height: 40px;
-    transition: width 500ms linear,
+    transition: width $main-animation,
 }
 
 .services__text{

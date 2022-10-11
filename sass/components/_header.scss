@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    transition: background-color 500ms linear;
+    transition: background-color $main-animation;
 }
 
 @media screen and (min-width: 768px) {
@@ -36,6 +36,8 @@
     border: none;
     color: getColor("light-color");
     margin-bottom: 100px;
+    transition: color $main-animation;
+    cursor: pointer;
 
     &:hover{
         color: getColor("accent-color");

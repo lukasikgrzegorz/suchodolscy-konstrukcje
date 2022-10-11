@@ -48,7 +48,7 @@
     gap: 15px;
     outline: 5px solid getColor("accent-color") ;
     outline-offset: -5px;
-    transition: outline-offset 200ms linear;
+    transition: outline-offset $main-animation;
     width: 100%;
     max-width: 450px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
@@ -108,7 +108,7 @@
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    transition: background-color 200ms linear;
+    transition: background-color $main-animation;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 
